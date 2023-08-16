@@ -24,8 +24,19 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+        }
+
+        .section {
+            background-color: beige;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section:nth-child(even) {
+            background-color: brown;
+            color: #fff;
         }
 
         h2 {
@@ -42,21 +53,27 @@
     </header>
 
     <div class="container">
-        <h2>Welcome to Copper Canyon's Pet Sitting</h2>
-        <p>We provide top-notch care for your furry friends while you're away. Trust in our professional and loving service to keep your pets happy and safe.</p>
+        <div class="section">
+            <h2>Welcome to Copper Canyon's Pet Sitting</h2>
+            <p>We provide top-notch care for your furry friends while you're away. Trust in our professional and loving service to keep your pets happy and safe.</p>
+        </div>
 
-        <h2>Services</h2>
-        <ul>
-            <li>Dog Sitting</li>
-            <li>Cat Care</li>
-            <li>Walks and Playtime</li>
-            <li>Overnight Stays</li>
-        </ul>
+        <div class="section">
+            <h2>Services</h2>
+            <ul>
+                <li>Dog Sitting</li>
+                <li>Cat Care</li>
+                <li>Walks and Playtime</li>
+                <li>Overnight Stays</li>
+            </ul>
+        </div>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to book our services, please get in touch:</p>
-        <p>Email: <a href="mailto:info@coppercanyonpetsitting.com">info@coppercanyonpetsitting.com</a></p>
-        <p>Phone: (123) 456-7890</p>
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to book our services, please get in touch:</p>
+            <p>Email: <a href="mailto:coppercanyonspetsitting@gmail.com">coppercanyonspetsitting@gmail.com</a></p>
+            <p>Phone: (480) 818-2975</p>
+        </div>
     </div>
 </body>
 
