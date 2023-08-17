@@ -154,6 +154,35 @@
     .contact-section {
         color: #000; /* black color */
     }
+
+    /* Email link styles */
+a.email-link {
+    color: #000; /* black color */
+    text-decoration: none; /* remove default underline */
+    position: relative; /* relative positioning for the pseudo-element */
+    transition: color 0.3s; /* smooth color transition */
+}
+
+a.email-link:hover {
+    color: #b87333; /* brown color on hover */
+}
+
+/* Underline animation on hover */
+a.email-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #b87333; /* brown color for the underline */
+    transition: width 0.3s; /* smooth width transition */
+}
+
+a.email-link:hover::after {
+    width: 100%; /* full width underline on hover */
+}
+    
 </style>
 
 <!-- ... (rest of the HTML code above) ... -->
@@ -161,7 +190,7 @@
 <div class="section contact-section" style="background-color: #fed9a6;"> <!-- Added "contact-section" class -->
     <h2>Contact Us</h2>
     <p>If you have any questions or would like to book our services, please get in touch:</p>
-    <p>Email: <a href="mailto:coppercanyonspetsitting@gmail.com" style="color: #000;">coppercanyonspetsitting@gmail.com</a></p> <!-- Inline style to ensure the link is black -->
+    <p>Email: <a href="mailto:coppercanyonspetsitting@gmail.com" class="email-link">coppercanyonspetsitting@gmail.com</a></p>
     <p>Phone: (480) 818-2975</p>
 
     <!-- Contact Form -->
